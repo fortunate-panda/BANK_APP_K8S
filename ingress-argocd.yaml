@@ -11,10 +11,10 @@ spec:
   ingressClassName: external-nginx
   tls:
   - hosts:
-    - argocd.cloudwitches.online
-    secretName: argocd-cloudwitches-online
+    - argocd.obioracloud.online
+    secretName: argocd-obioracloud.online
   rules:
-  - host: argocd.cloudwitches.online
+  - host: argocd.obioracloud.online
     http:
       paths:
       - path: /
