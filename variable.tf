@@ -89,15 +89,16 @@ variable "domain-name" {
   default     = "myapp.example.com"
 }
 
-variable "namecheap_api_user" {
-  description = "Namecheap API user"
+variable "hostinger_api_user" {
+  description = "hostinger API user"
   type        = string
-  default     = "smartobi"
+  default     = "rolandobiora"
 }
-variable "namecheap_api_key" {
-  description = "Namecheap API key"
+variable "hostinger_api_token" {
+  description = "hostinger API key"
   type        = string
-  default     = "a3ca57241b794d44b0fc3387ca9b62a9"
+  sensitive   = true
+  default     = "5PiiqAaZF0bnctcESGpXeRrNq5Fsesm8V4LtyopGbf51e0d1"
 }
 variable "namecheap_username" {
   description = "Namecheap username"
@@ -107,7 +108,7 @@ variable "namecheap_username" {
 variable "namecheap_client_ip" {
   description = "Client IP for Namecheap API access"
   type        = string
-  default     = "54.176.6.204" # Replace with your actual client IP
+  default     = "54.67.46.197" # Replace with your actual client IP
 }
 
 #===========
@@ -164,5 +165,5 @@ variable "repository_name" {
 variable "email" {
   description = "Email address for notifications and certificates"
   type        = string
-  default     = "support@digitalwitchng.online"
+  default     = "support@barnvest.com"
 }
