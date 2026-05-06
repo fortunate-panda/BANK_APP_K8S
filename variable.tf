@@ -89,16 +89,15 @@ variable "domain-name" {
   default     = "myapp.example.com"
 }
 
-variable "hostinger_api_user" {
-  description = "hostinger API user"
+variable "namecheap_api_user" {
+  description = "Namecheap API user"
   type        = string
-  default     = "rolandobiora"
+  default     = "rolandobi"
 }
-variable "hostinger_api_token" {
-  description = "hostinger API key"
+variable "hostinger_api_key" {
+  description = "Namecheap API key"
   type        = string
-  sensitive   = true
-  default     = "5PiiqAaZF0bnctcESGpXeRrNq5Fsesm8V4LtyopGbf51e0d1"
+  default     = "a3ca57241b794d44b0fc3387ca9b62a9"
 }
 variable "namecheap_username" {
   description = "Namecheap username"
