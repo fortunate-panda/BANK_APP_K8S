@@ -45,10 +45,10 @@ spec:
   ingressClassName: external-nginx
   tls:
   - hosts:
-    - app.cloudwitches.online
-    secretName: app-cloudwitches-online
+    - app.obioracloud.online
+    secretName: app-obioracloud-online
   rules:
-  - host: app.cloudwitches.online
+  - host: app.obioracloud.online
     http:
       paths:
       - path: /
@@ -58,4 +58,3 @@ spec:
             name: nginx-service
             port:
               number: 80
-
