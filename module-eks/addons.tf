@@ -40,7 +40,7 @@ resource "helm_release" "nginx_ingress" {
     values = [file("${path.module}/nginx-ingress-values.yaml")]
     depends_on = [ aws_eks_node_group.eks_node_group ]
 }
-/*
+
 data "aws_lb" "nginx_ingress" {
   tags = {
     "kubernetes.io/service-name" = "ingress-nginx/nginx-ingress-ingress-nginx-controller"
@@ -48,7 +48,7 @@ data "aws_lb" "nginx_ingress" {
 
   depends_on = [helm_release.nginx_ingress]
 }
-*/
+
 resource "helm_release" "cert_manager" {
     name       = "cert-manager"
     repository = "https://charts.jetstack.io"
